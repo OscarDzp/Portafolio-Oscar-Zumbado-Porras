@@ -1,0 +1,140 @@
+    /* Estilos para el modo claro */
+    body {
+        background-color: #ffffff;
+        color: #000000;
+        transition: background-color 0.3s;
+    }
+
+    /* Estilos para el modo oscuro */
+    body.dark-mode {
+        background-color: #000000;
+        color: #ffffff;
+        transition: background-color 0.3s;
+    }
+
+    /* Estilos para el botón */
+    .toggle-button {
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        border-radius: 17px;
+        background-color: #d1d1d1;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .toggle-button .slider {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    /* Estilos para el botón en modo oscuro */
+    body.dark-mode .toggle-button {
+        background-color: #888888;
+    }
+
+    body.dark-mode .toggle-button .slider {
+        transform: translateX(26px);
+    }
+    .boton {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007bff;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .boton:hover {
+        background-color: #0056b3;
+    }
+
+    /* Estilos para el contenido */
+    .contenido {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+    .mr-2 {
+        margin-right: 2rem;
+    }
+
+    .contacto-icono {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .btn-contacto {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-contacto:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+
+    .btn-custom {
+        font-size: 14px;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contacto-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    
+    .contacto-icono {
+        margin-right: 5px;
+    }
+    
+    .dark-mode .contacto-link {
+        color: #fff;
+    }
+
+    .education-item {
+        margin-bottom: 20px;
+    }
+    
+    .education-item h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    
+    .education-date {
+        font-size: 16px;
+        color: #999;
+        margin-bottom: 3px;
+    }
+    
+    .education-item p {
+        margin-bottom: 5px;
+    }
+    
+   

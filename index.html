@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <meta name="description" content="Portafolio profesional de Oscar Andrés Zumbado Porras, especializado en desarrollo web, bases de datos y SEO.">
+    <meta name="keywords" content="Oscar Zumbado, desarrollo web, SEO, bases de datos, portafolio">
+    <meta name="author" content="Oscar Andrés Zumbado Porras">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Oscar Andrés Zumbado Porras</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link texto-idioma" href="#section0" data-español="Inicio" data-inglés="Home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link texto-idioma" href="#section1" data-español="Sobre Mí" data-inglés="About Me">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link texto-idioma" href="#section2" data-español="Portafolio" data-inglés="Portfolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link texto-idioma" href="#section3" data-español="Educación" data-inglés="Education">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link texto-idioma" href="#section6" data-español="Experiencia" data-inglés="Experience">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link texto-idioma" href="#section4" data-español="Habilidades" data-inglés="Skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link texto-idioma" href="#section5" data-español="Contacto" data-inglés="Contact">Contacto</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-3">
+                    <button class="btn btn-outline-light me-2" onclick="toggleDarkMode()">Modo Oscuro</button>
+                    <button class="btn btn-outline-light" onclick="cambiarIdioma('español')">ES</button>
+                    <button class="btn btn-outline-light ms-2" onclick="cambiarIdioma('inglés')">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5 pt-5">
+        <section id="section0" class="text-center py-5">
+            <h1 class="display-4 texto-idioma" data-español="Bienvenido al Portafolio" data-inglés="Welcome to the Portfolio">Bienvenido al Portafolio</h1>
+            <p class="lead texto-idioma" data-español="Soy Oscar Andrés Zumbado Porras, proactivo con experiencia en desarrollo web, administración de bases de datos y mejora del SEO." data-inglés="I am Oscar Andrés Zumbado Porras, proactive with experience in web development, database administration, and SEO improvement.">Soy Oscar Andrés Zumbado Porras, proactivo con experiencia en desarrollo web, administración de bases de datos y mejora del SEO.</p>
+            <a href="CVS/OSCAR ANDRÉS ZUMBADO PORRAS CV EN.pdf" download class="btn btn-primary mx-2 texto-idioma" data-español="Descargar CV (EN)" data-inglés="Download CV (EN)">Descargar CV (EN)</a>
+            <a href="CVS/OSCAR ANDRÉS ZUMBADO PORRAS CV ESP.pdf" download class="btn btn-secondary mx-2 texto-idioma" data-español="Descargar CV (ES)" data-inglés="Download CV (ES)">Descargar CV (ES)</a>
+        </section>
+
+        <section id="section1" class="py-5">
+            <h2 class="text-center texto-idioma" data-español="Sobre Mí" data-inglés="About Me">Sobre Mí</h2>
+            <p class="text-center texto-idioma" data-español="Soy Oscar Andrés Zumbado Porras, proactivo con experiencia en desarrollo web, administración de bases de datos y mejora del SEO. Mi enfoque está en crear soluciones tecnológicas eficientes, garantizar la calidad de los proyectos y aprender continuamente para mantenerme al día con las tendencias del sector. Estoy motivado por la idea de trabajar en equipos dinámicos y contribuir con mis habilidades para el éxito de los proyectos." data-inglés="I am Oscar Andrés Zumbado Porras, proactive with experience in web development, database administration, and SEO improvement. My focus is on creating efficient technological solutions, ensuring project quality, and continuously learning to stay updated with industry trends. I am motivated by the idea of working in dynamic teams and contributing my skills to the success of projects.">Soy Oscar Andrés Zumbado Porras, proactivo con experiencia en desarrollo web, administración de bases de datos y mejora del SEO. Mi enfoque está en crear soluciones tecnológicas eficientes, garantizar la calidad de los proyectos y aprender continuamente para mantenerme al día con las tendencias del sector. Estoy motivado por la idea de trabajar en equipos dinámicos y contribuir con mis habilidades para el éxito de los proyectos.</p>
+        </section>
+
+        <section id="section2" class="py-5">
+            <h2 class="text-center texto-idioma" data-español="Portafolio" data-inglés="Portfolio">Portafolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Imagenes/imagen1.png" class="card-img-top" alt="Proyecto Inventario">
+                        <div class="card-body">
+                            <h5 class="card-title texto-idioma" data-español="Sistema de Inventario" data-inglés="Inventory System">Sistema de Inventario</h5>
+                            <p class="card-text texto-idioma" data-español="Desarrollo de un sistema de inventario para gestionar componentes de computadoras, permitiendo un control eficiente y simplificado del stock." data-inglés="Development of an inventory system to manage computer components, enabling efficient and simplified stock control.">Desarrollo de un sistema de inventario para gestionar componentes de computadoras, permitiendo un control eficiente y simplificado del stock.</p>
+                            <a href="https://github.com/OscarDzp/P52023_ProyectoTechGear" class="btn btn-primary texto-idioma" data-español="Ver más" data-inglés="Learn More">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Imagenes/imagen2.png" class="card-img-top" alt="Red Social">
+                        <div class="card-body">
+                            <h5 class="card-title texto-idioma" data-español="Red Social" data-inglés="Social network">Red Social</h5>
+                            <p class="card-text texto-idioma" data-español="Desarrollé una red social utilizando Laravel y PHP, que permite a los usuarios, realizar publicaciones, interactuar con otros, comentar y subir imágenes. La plataforma está altamente optimizada y trabajada." data-inglés="I developed a social network using Laravel and PHP, allowing users to make posts, interact with others, comment, and upload images. The platform is highly optimized and well-crafted.">Desarrollé una red social utilizando Laravel y PHP, que permite a los usuarios, realizar publicaciones, interactuar con otros, comentar y subir imágenes. La plataforma está altamente optimizada y trabajada.</p>
+                            <a href="https://github.com/OscarDzp/Proyecto-Progamacion-3.git" class="btn btn-primary texto-idioma" data-español="Ver más" data-inglés="Learn More">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Imagenes/imagen3.png" class="card-img-top" alt="API de Rick y Morty ">
+                        <div class="card-body">
+                            <h5 class="card-title texto-idioma" data-español="API de Rick y Morty " data-inglés="Rick and Morty API">API de Rick y Morty </h5>
+                            <p class="card-text texto-idioma" data-español="Consumí la API de Rick y Morty y la personalicé para ofrecer una experiencia visual optimizada, mejorando su apariencia y funcionalidad." data-inglés="I consumed the Rick and Morty API and customized it to provide an optimized visual experience, enhancing both its appearance and functionality.">Consumí la API de Rick y Morty y la personalicé para ofrecer una experiencia visual optimizada, mejorando su apariencia y funcionalidad.</p>
+                            <a href="https://github.com/OscarDzp/rick-and-morty-api.git" class="btn btn-primary texto-idioma" data-español="Ver más" data-inglés="Learn More">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3" class="py-5">
+            <h2 class="text-center texto-idioma" data-español="Educación" data-inglés="Education">Educación</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-school"></i> <span class="texto-idioma" data-español="Colegio Experimental Bilingüe de Palmares" data-inglés="Experimental Bilingual High School of Palmares">Colegio Experimental Bilingüe de Palmares</span></h5>
+                    <p class="texto-idioma" data-español="2013 - 2018 | Bachiller en Educación Media" data-inglés="2013 - 2018 | High School Diploma">2013 - 2018 | Bachiller en Educación Media</p>
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="fas fa-university"></i> <span class="texto-idioma" data-español="Universidad Castro Carazo" data-inglés="Castro Carazo University">Universidad Castro Carazo</span></h5>
+                    <p class="texto-idioma" data-español="2022 - 2024 | Ingeniería Informática" data-inglés="2022 - 2024 | Computer Engineering">2022 - 2024 | Ingeniería Informática</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section6" class="py-5">
+            <h2 class="text-center texto-idioma" data-español="Experiencia" data-inglés="Experience">Experiencia</h2>
+            <div class="experience-item">
+                <h5 class="texto-idioma" data-español="Pasantía Desarrollador Junior" data-inglés="Junior Developer Internship">Pasantía Desarrollador Junior</h5>
+                <p><strong class="texto-idioma" data-español="Simetría Soluciones Digitales, Mayo 2024 - Agosto 2024" data-inglés="Simetría Soluciones Digitales, May 2024 - August 2024">Simetría Soluciones Digitales, Mayo 2024 - Agosto 2024</strong></p>
+                <ul>
+                    <li class="texto-idioma" data-español="Desarrollo, mantenimiento y optimización de sitios en WordPress: Creación de sitios web desde cero para bibliotecas, asegurando accesibilidad y facilidad de uso; además, optimización estética y funcional de un sitio existente para mejorar su apariencia y usabilidad, proporcionando una experiencia de usuario más intuitiva y atractiva." data-inglés="Development, maintenance, and optimization of WordPress sites: Creating websites from scratch for libraries, ensuring accessibility and ease of use; additionally, aesthetic and functional optimization of an existing site to improve its appearance and usability, providing a more intuitive and attractive user experience.">Desarrollo, mantenimiento y optimización de sitios en WordPress: Creación de sitios web desde cero para bibliotecas, asegurando accesibilidad y facilidad de uso; además, optimización estética y funcional de un sitio existente para mejorar su apariencia y usabilidad, proporcionando una experiencia de usuario más intuitiva y atractiva.</li>
+                    <li class="texto-idioma" data-español="Administración y optimización de bases de datos en SQL Server y phpMyAdmin: Gestión y optimización de bases de datos mediante la creación de procedimientos almacenados, mejorando la eficiencia de los procesos y reduciendo el tiempo de carga en las aplicaciones." data-inglés="Administration and optimization of SQL Server and phpMyAdmin databases: Managing and optimizing databases through stored procedures, improving process efficiency and reducing application load times.">Administración y optimización de bases de datos en SQL Server y phpMyAdmin: Gestión y optimización de bases de datos mediante la creación de procedimientos almacenados, mejorando la eficiencia de los procesos y reduciendo el tiempo de carga en las aplicaciones.</li>
+                    <li class="texto-idioma" data-español="Desarrollo de APIs REST con Dapper para integración de bases de datos y front-end: Creación de APIs REST utilizando Dapper para conectar una base de datos en SQL Server (optimizada con procedimientos almacenados) con el front-end en React, facilitando una comunicación eficiente y mejorando la interacción del usuario con los datos." data-inglés="Development of REST APIs with Dapper for database and front-end integration: Creating REST APIs using Dapper to connect a SQL Server database (optimized with stored procedures) with the React front-end, facilitating efficient communication and improving user interaction with data.">Desarrollo de APIs REST con Dapper para integración de bases de datos y front-end: Creación de APIs REST utilizando Dapper para conectar una base de datos en SQL Server (optimizada con procedimientos almacenados) con el front-end en React, facilitando una comunicación eficiente y mejorando la interacción del usuario con los datos.</li>
+                    <li class="texto-idioma" data-español="QA básico y mantenimiento de sitios web: Realización de pruebas básicas de calidad (QA) para identificar y documentar áreas de mejora en sitios web, asegurando el correcto funcionamiento de cada sección y facilitando el mantenimiento continuo." data-inglés="Basic QA and website maintenance: Conducting basic quality assurance (QA) tests to identify and document improvement areas in websites, ensuring the proper functioning of each section and facilitating ongoing maintenance.">QA básico y mantenimiento de sitios web: Realización de pruebas básicas de calidad (QA) para identificar y documentar áreas de mejora en sitios web, asegurando
+                 </ul>
+            </div>
+        </section>
+
+        <section id="section4" class="py-5">
+            <h2 class="text-center texto-idioma" data-español="Habilidades" data-inglés="Skills">Habilidades</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="texto-idioma" data-español="Lenguajes de Programación" data-inglés="Programming Languages">Lenguajes de Programación</h5>
+                    <ul>
+                        <li>Java, JavaScript, PHP, C# (.NET CORE), Oracle Forms, Apex, Node.js</li>
+                    </ul>
+                    <h5 class="texto-idioma" data-español="Herramientas de Desarrollo y Productividad" data-inglés="Development and Productivity Tools">Herramientas de Desarrollo y Productividad</h5>
+                    <ul>
+                        <li>Azure DevOPS, Git, Swagger, Visual Studio Code, Visual Studio 2022 Community, Postman</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="texto-idioma" data-español="Bases de Datos" data-inglés="Databases">Bases de Datos</h5>
+                    <ul>
+                        <li>Microsoft SQL Server, MySQL, Oracle</li>
+                    </ul>
+                    <h5 class="texto-idioma" data-español="Metodologías" data-inglés="Methodologies">Metodologías</h5>
+                    <ul>
+                        <li>Scrum, Kanban, Clean Architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="section5" class="py-5">
+            <h2 class="text-center texto-idioma" data-español="Contacto" data-inglés="Contact">Contacto</h2>
+            <div class="text-center">
+                <p class="texto-idioma" data-español="¡No dudes en contactarme!" data-inglés="Feel free to contact me!">¡No dudes en contactarme!</p>
+                <a href="https://wa.me/+50664284286" class="btn btn-success mx-2">
+                    <i class="fab fa-whatsapp"></i> 
+                    <span class="texto-idioma" data-español="WhatsApp" data-inglés="WhatsApp">WhatsApp</span>
+                </a>
+                <a href="mailto:ozumbado2000@gmail.com" class="btn btn-danger mx-2">
+                    <i class="far fa-envelope"></i> 
+                    <span class="texto-idioma" data-español="Email" data-inglés="Email">Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/oscar-andr%C3%A9s-zumbado-porras-0a1726325/" class="btn btn-primary mx-2">
+                    <i class="fab fa-linkedin"></i> 
+                    <span class="texto-idioma" data-español="LinkedIn" data-inglés="LinkedIn">LinkedIn</span>
+                </a>
+                <a href="https://github.com/OscarDzp" class="btn btn-dark mx-2">
+                    <i class="fab fa-github"></i> 
+                    <span class="texto-idioma" data-español="GitHub" data-inglés="GitHub">GitHub</span>
+                </a>
+            </div>
+        </section>
+        </main> 
+     
+            <footer class="text-center py-3 bg-dark text-white">
+                <p class="texto-idioma" data-español="&copy; 2025 Oscar Andrés Zumbado Porras. Todos los derechos reservados." data-inglés="&copy; 2025 Oscar Andrés Zumbado Porras. All rights reserved.">&copy; 2025 Oscar Andrés Zumbado Porras. Todos los derechos reservados.</p>
+            </footer>
+    
+
+            <script>
+                function toggleDarkMode() {
+                    document.body.classList.toggle("dark-mode");
+                }
+        
+                function cambiarIdioma(idioma) {
+                    var elementos = document.getElementsByClassName('texto-idioma');
+                    for (var i = 0; i < elementos.length; i++) {
+                        var elemento = elementos[i];
+                        elemento.innerText = elemento.dataset[idioma];
+                    }
+                }
+            </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
